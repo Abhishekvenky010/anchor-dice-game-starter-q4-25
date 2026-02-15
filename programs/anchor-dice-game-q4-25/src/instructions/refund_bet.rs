@@ -20,6 +20,7 @@ pub struct RefundBet<'info> {
     #[account(
         mut,
         close = player,
+         has_one = player,
         seeds = [b"bet", vault.key().as_ref(), bet.seed.to_le_bytes().as_ref()],
         bump = bet.bump
     )]

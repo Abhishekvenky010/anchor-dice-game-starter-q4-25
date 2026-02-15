@@ -6,7 +6,7 @@ edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "anchor_dice_game_q4_25"
+name = "anchor_dice_2026"
 
 [features]
 default = []

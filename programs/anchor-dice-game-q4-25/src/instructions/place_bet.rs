@@ -18,7 +18,7 @@ pub struct PlaceBet<'info> {
     #[account(
         init,
         payer = player,
-        space = Bet::Discriminator.len() + Bet::INIT_SPACE,
+        space = 8 + Bet::INIT_SPACE,
         seeds = [b"bet", vault.key().as_ref(), seed.to_le_bytes().as_ref()],
         bump
     )]
